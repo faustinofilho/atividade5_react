@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Button, TextInput, TouchableOpacity } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
+import 'react-native-gesture-handler';
 import QRCode from 'react-native-qrcode-svg';
 
 
@@ -29,7 +30,7 @@ const Tela1 = () => {
 
       <QRCode
       size={350}
-        value={resultado}
+        value='{resultado}'
       />
 
       <TextInput placeholder='Digite aqui o codigo' style={{backgroundColor: '#f5f5f5', padding: 10, marginBottom: 30, alignItems: 'center', marginTop: 30}} onChangeText={(value)=>setCodigo(value)}/>
